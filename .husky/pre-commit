@@ -1,0 +1,10 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+npm run check || {
+  echo "🚨 Biome check failed. Issues were found in your code."
+  echo "Run 'npm run format' to fix formatting issues automatically."
+  echo "If there are linting errors, review them and fix them manually."
+  echo "After fixing, run 'git add' to stage the changes before committing."
+  exit 1
+}
