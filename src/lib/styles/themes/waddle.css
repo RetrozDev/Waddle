@@ -1,29 +1,29 @@
-[data-theme='waddle'] {
-    /* Colors */
-    --primaryColor: #2563eb;
-    --primaryColor-hover: #1d4ed8;
-    --secondaryColor: #4b5563;
-    --secondaryColor-hover: #374151;
-    --ghost: transparent;
-    --ghost-hover: #f3f4f6;
-    
-    /* Text Colors */
-    --text-light: #ffffff;
-    --text-dark: #1f2937;
-    
-    /* Sizes */
-    --size-sm: 0.875rem;
-    --size-md: 1rem;
-    --size-lg: 1.125rem;
-    
-    /* Spacing */
-    --spacing-sm: 0.5rem 1rem;
-    --spacing-md: 0.75rem 1.5rem;
-    --spacing-lg: 1rem 2rem;
-    
-    /* Borders */
-    --border-radius: 0.375rem;
-    
-    /* Transitions */
-    --transition: all 0.2s ease-in-out;
-  }
+[data-theme="waddle"] {
+	/* Colors */
+	--primaryColor: #2563eb;
+	--primaryColor-hover: #1d4ed8;
+	--secondaryColor: #4b5563;
+	--secondaryColor-hover: #374151;
+	--ghost: transparent;
+	--ghost-hover: #f3f4f6;
+
+	/* Text Colors */
+	--text-light: #ffffff;
+	--text-dark: #1f2937;
+
+	/* Sizes */
+	--size-sm: 0.875rem;
+	--size-md: 1rem;
+	--size-lg: 1.125rem;
+
+	/* Spacing */
+	--spacing-sm: 0.5rem 1rem;
+	--spacing-md: 0.75rem 1.5rem;
+	--spacing-lg: 1rem 2rem;
+
+	/* Borders */
+	--border-radius: 0.375rem;
+
+	/* Transitions */
+	--transition: all 0.2s ease-in-out;
+}

@@ -1,12 +1,12 @@
-import { Button } from './lib';
-import '@themes/waddle.css'
+import { Button } from "./lib";
+import "@themes/waddle.css";
 
 function App() {
 	return (
-  <>
-    <Button>Test</Button>
-  </>
-  )
+		<>
+			<Button>Test</Button>
+		</>
+	);
 }
 
 export default App;
