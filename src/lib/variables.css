@@ -1,4 +1,6 @@
-[data-theme="waddle"] {
+:root {
+	/* Waddle Theme ( default ) */
+
 	/* Colors */
 	--primaryColor: #2563eb;
 	--primaryColor-hover: #1d4ed8;
