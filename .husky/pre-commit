@@ -1,6 +1,3 @@
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
-
 npm run check || {
   echo "🚨 Biome check failed. Issues were found in your code."
   echo "Run 'npm run format' to fix formatting issues automatically."
