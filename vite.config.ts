@@ -1,8 +1,8 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 
-// https://vitejs.dev/config/
 export default defineConfig({
+	base: "/Waddle/",
 	build: {
 		cssCodeSplit: false,
 		lib: {
@@ -13,9 +13,8 @@ export default defineConfig({
 		rollupOptions: {
 			external: ["react", "react-dom"],
 			output: {
-				globals: {
-					react: "React",
-					"react-dom": "ReactDOM",
+				manualChunks: {
+					vendor: ["react", "react-dom"],
 				},
 			},
 		},
