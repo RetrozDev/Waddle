@@ -1,0 +1,144 @@
+.input,
+.label {
+	vertical-align: middle;
+}
+
+.input {
+	appearance: none;
+	margin: 0 auto;
+	position: relative;
+	border: 2px solid var(--secondaryColor);
+	border-radius: var(--border-radius);
+	cursor: pointer;
+	transition: var(--transition);
+}
+
+.input:checked {
+	background-color: var(--primaryColor);
+	border-color: var(--primaryColor);
+}
+
+.input:checked::after {
+	content: "\1F5F8";
+	color: var(--text-light);
+	font-size: 90%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.input.rounded:checked::after {
+	content: " ";
+}
+
+.input:hover {
+	border-color: var(--primaryColor-hover);
+}
+
+.input:disabled {
+	cursor: not-allowed;
+	opacity: 0.5;
+}
+
+.input.default {
+	border-radius: 20%;
+}
+
+.input.switch {
+	border-radius: 50px;
+	background-color: var(--secondaryColor);
+	position: relative;
+	transition: var(--transition);
+}
+
+.input.switch:checked {
+	background-color: var(--primaryColor);
+}
+
+.input.switch::after {
+	content: " ";
+	position: absolute;
+	background-color: var(--text-light);
+	border-radius: 50%;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: var(--transition);
+}
+
+.input.switch:checked::after {
+	transform: translateY(-50%);
+}
+
+.input.rounded {
+	border-radius: 50%;
+}
+
+/* Input sizes */
+.input.sm {
+	width: var(--size-sm);
+	height: var(--size-sm);
+}
+
+.input.md {
+	width: var(--size-md);
+	height: var(--size-md);
+}
+
+.input.lg {
+	width: var(--size-lg);
+	height: var(--size-lg);
+}
+
+/* Switch input sizes */
+.input.switch.sm {
+	width: calc(2 * var(--size-sm));
+	height: var(--size-sm);
+}
+
+.input.switch.md {
+	width: calc(2 * var(--size-md));
+	height: var(--size-md);
+}
+
+.input.switch.lg {
+	width: calc(2 * var(--size-lg));
+	height: var(--size-lg);
+}
+
+/* Switch round size */
+.input.switch.sm::after {
+	width: calc(var(--size-sm) - 3px);
+	height: calc(var(--size-sm) - 3px);
+}
+.input.switch.md::after {
+	width: calc(var(--size-md) - 3px);
+	height: calc(var(--size-md) - 3px);
+}
+.input.switch.lg::after {
+	width: calc(var(--size-lg) - 3px);
+	height: calc(var(--size-lg) - 3px);
+}
+
+/* .Label */
+.label {
+	margin-left: 0.5rem;
+	color: var(--text-dark);
+}
+
+.label.sm {
+	font-size: var(--size-sm);
+}
+
+.label.md {
+	font-size: var(--size-md);
+}
+
+.label.lg {
+	font-size: var(--size-lg);
+}
+
+.input:disabled + .label {
+	cursor: not-allowed;
+	opacity: 0.5;
+}
