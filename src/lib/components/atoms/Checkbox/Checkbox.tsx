@@ -24,7 +24,7 @@ export type CheckboxProps = {
 	htmlFor?: string;
 };
 
-/** A checkbox */
+/** A  checkbox */
 export function Checkbox({
 	variant = "default",
 	size = "md",
